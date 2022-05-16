@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SGBINTEGRACION" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=cloud4.loditec.cl,2402;Initial Catalog=SGBINTEGRACION;User ID=sa" SettingsObjectName="ROBOTACETOGENWS.Properties.Settings" SettingsPropertyName="SGBINTEGRACIONConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ACETOGEN_TXTIN" Member="ACETOGEN_TXTIN">
+    <Type Name="ACETOGEN_TXTIN">
+      <Column Name="ID_TXTIN" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumeroOrden" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NumeroDocumento" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CodigoCliente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CodigoSucursal" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Cod_Direc" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Comuna" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Region" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OCC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NumeroReferencia" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FechaSolicitada" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FechaDocumento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FechaVencimiento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Observaciones" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Transporte" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CodigoProducto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NombreProducto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Cant_Solicitada" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Id_Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Empresa" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Tipo_Doc" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id_Zcabecera" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id_Orden" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id_OrdenDetalle" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id_EmpresaDestino" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id_ProductoTipoEmbalaje" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACETOGEN_Recepcion" Member="ACETOGEN_Recepcion">
+    <Type Name="ACETOGEN_Recepcion">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_Orden" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id_OrdenDetalle" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Codigo_Empresa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo_Documento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Numero_Orden" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo_Producto" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cantidad_Recepcion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaTransaccion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Id_Estado" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACETOGEN_Picking" Member="ACETOGEN_Picking">
+    <Type Name="ACETOGEN_Picking">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_Orden" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id_OrdenDetalle" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Codigo_Empresa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo_Documento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Numero_Orden" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo_Producto" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cantidad_Picking" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaTransaccion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Id_Estado" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TipoDoc" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.ACETOGEN_Picking_UpdKey" Method="ACETOGEN_Picking_UpdKey">
+    <Parameter Name="IdOrden" Parameter="idOrden" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ACETOGEN_TXTINLOG_InsKey" Method="ACETOGEN_TXTINLOG_InsKey">
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Tipo" Parameter="tipo" Type="System.String" DbType="VarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ACETOGEN_OrdenesWS_InsKey" Method="ACETOGEN_OrdenesWS_InsKey">
+    <Parameter Name="Numero_Orden" Parameter="numero_Orden" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NumeroDoc" Parameter="numeroDoc" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Cod_cliente" Parameter="cod_cliente" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Cod_Sucursal" Parameter="cod_Sucursal" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Cod_Direc" Parameter="cod_Direc" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Comuna" Parameter="comuna" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Region" Parameter="region" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Fecha" Parameter="fecha" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="occ" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="N_Referencia" Parameter="n_Referencia" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaSolicitada" Parameter="fechaSolicitada" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaDocumento" Parameter="fechaDocumento" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaVencimiento" Parameter="fechaVencimiento" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Observaciones" Parameter="observaciones" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Transporte" Parameter="transporte" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CodigoProducto" Parameter="codigoProducto" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NombreProducto" Parameter="nombreProducto" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Cant_Solicitada" Parameter="cant_Solicitada" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="Empresa" Parameter="empresa" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="TIPO_DOC" Parameter="tIPO_DOC" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="NOM_CLIENTE" Parameter="nOM_CLIENTE" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Bodega" Parameter="bodega" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ACETOGEN_JSON_InsKey" Method="ACETOGEN_JSON_InsKey">
+    <Parameter Name="JSON" Parameter="jSON" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ACETOGEN_Delete_Temporal" Method="ACETOGEN_Delete_Temporal">
+    <Parameter Name="Id_Estado" Parameter="id_Estado" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ACETOGEN_ACETOGEN_TXTIN_Carga" Method="ACETOGEN_ACETOGEN_TXTIN_Carga">
+    <Parameter Name="Id_Estado" Parameter="id_Estado" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ACETOGEN_Recepcion_UpdKey" Method="ACETOGEN_Recepcion_UpdKey">
+    <Parameter Name="IdOrden" Parameter="idOrden" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

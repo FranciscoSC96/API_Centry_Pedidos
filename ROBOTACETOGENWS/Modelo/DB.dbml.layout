@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DB">
+  <DataContextMoniker Name="/DBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3a8331bf-4736-4398-be4e-6445faac856c" isExpanded="false" absoluteBounds="0.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/DBDataContext/ACETOGEN_TXTIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5038a50-79ba-427e-83b3-a75d45d5d71a" absoluteBounds="0.51500000000000012, 1.585, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ffb7ac74-1365-44a7-a160-3844c2116f69" isExpanded="false" absoluteBounds="4.25, 1, 2, 0.45">
+      <DataClassMoniker Name="/DBDataContext/ACETOGEN_Recepcion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5950f8a-6e69-4a09-98e1-f759dc0d6a63" absoluteBounds="4.265, 1.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="663ca3d4-1ddb-47ee-bf99-d62804c5ff41" isExpanded="false" absoluteBounds="4.25, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DBDataContext/ACETOGEN_Picking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad81b2e9-4648-4f06-b938-2913438cfe55" absoluteBounds="4.265, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
